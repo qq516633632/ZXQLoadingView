@@ -1,0 +1,27 @@
+<resources>
+
+
+
+    <!-- 选择照片底部弹出层 -->
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="center_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--<item name="android:windowBackground">@drawable/load_bg_img_back_img</item>-->
+        <item name="android:windowEnterAnimation">@anim/center_pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/center_pop_exit_anim</item>
+    </style>
+
+    <style name="center_in_anim">
+        <item name="android:windowEnterAnimation">@anim/center_pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/center_pop_exit_anim</item>
+    </style>
+
+</resources>
