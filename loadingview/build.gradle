@@ -1,9 +1,12 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.novoda.bintray-release'
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.0"
 
+    lintOptions {
+        abortOnError false
+    }
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 26
@@ -22,4 +25,18 @@ android {
 dependencies {
 
 compile 'com.android.support:support-annotations:26.0.0'
+}
+
+publish {
+    userOrg = 'qq516633632'//bintray.com用户名
+    groupId = 'com.zhuxiaoqing.LoadingView'//jcenter上的路径
+    artifactId = 'ZXQLoadingView'//项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = '最简单的Loading 适合网络Loading，耗时操作Loading已经各种场景下的'//描述，不重要
+    website = 'https://github.com/qq516633632/ZXQLoadingView'//网站，最好有，不重要
+}
+tasks.withType(Javadoc) {//防止编码问题
+    options.addStringOption('Xdoclint:none', '-quiet')
+    options.addStringOption('encoding', 'UTF-8')
+    options.addStringOption('charSet', 'UTF-8')
 }
