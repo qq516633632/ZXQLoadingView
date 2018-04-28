@@ -1,5 +1,7 @@
 # ZXQLoadingView
 最简单的Loading 适合网络Loading，耗时操作Loading已经各种场景下的
+## 效果图 
+![](https://github.com/qq516633632/ZXQLoadingView/blob/master/loding_img.gif)   
 
 ## 使用方法
 ## Gradle添加引用
