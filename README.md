@@ -6,7 +6,7 @@
 ## 使用方法
 ## Gradle添加引用
 ```
-compile 'com.zhuxiaoqing.LoadingView：ZXQLoadingView：1.0.0'
+compile 'com.zhuxiaoqing.LoadingView:ZXQLoadingView:1.0.0'
 
 ```
 
